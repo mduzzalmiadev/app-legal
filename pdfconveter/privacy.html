@@ -56,14 +56,15 @@
 <div class="wrap">
 
   <h1>Privacy Policy</h1>
-  <p class="updated">App: <strong>PDF Editor</strong> &nbsp;·&nbsp; Effective date: August 7, 2026</p>
+  <p class="updated">App: <strong>PDF Editor</strong> &nbsp;·&nbsp; Effective date: August 14, 2026</p>
 
-  <p>This Privacy Policy explains how <strong class="app-name">PDF Editor</strong> ("the App", "we", "us") handles information when you use the app on iPhone or iPad. We built PDF Editor to do its work on your device — most of what the app touches (your PDF files, edits, images) never leaves your device unless you explicitly share it yourself.</p>
+  <p>This Privacy Policy explains how <strong class="app-name">PDF Editor</strong> ("the App", "we", "us") handles information when you use the app on iPhone or iPad. We built PDF Editor to do most of its work on your device — your PDF files, edits, and images never leave your device unless you explicitly share them yourself or choose to use one of the App's AI features, which are described in Section 2.4 below.</p>
 
   <h2>1. Summary</h2>
   <ul>
     <li>Your PDF documents, edits, and images are processed and stored <strong>locally on your device</strong>. We do not operate a server that receives, stores, or views your files.</li>
     <li>The App requests Camera and Photo Library access only to let you add photos to a PDF — nothing is uploaded anywhere as a result.</li>
+    <li>If you use an <strong>AI feature</strong> (Chat with PDF, Summarize, Analyze, Extract, Rewrite, or Translate), the relevant document text and your messages are sent to our AI provider, OpenAI, solely to generate a response — see Section 2.4.</li>
     <li>If you purchase a subscription, purchase and entitlement information is handled by Apple and our subscription platform, RevenueCat, as described below.</li>
     <li>We do not use advertising SDKs, and we do not sell your personal information.</li>
   </ul>
@@ -71,7 +72,7 @@
   <h2>2. Information We Collect</h2>
 
   <h3>2.1 Files and content you create in the App</h3>
-  <p>PDF Editor lets you open, edit, annotate, merge, convert, and export PDF documents, and insert images or camera photos into them. All of this processing happens on your device using Apple's PDFKit and related frameworks. Your documents are stored in the App's local document storage (and, if you use the Share Extension, in a shared App Group container used only to hand files off between the Share Extension and the main app on your own device). We do not transmit your document content to our own servers, and we do not have access to it.</p>
+  <p>PDF Editor lets you open, edit, annotate, merge, convert, and export PDF documents, and insert images or camera photos into them. All of this processing happens on your device using Apple's PDFKit and related frameworks. Your documents are stored in the App's local document storage (and, if you use the Share Extension, in a shared App Group container used only to hand files off between the Share Extension and the main app on your own device). We do not transmit your document content to our own servers, and we do not have access to it. The one exception is when you actively use an AI feature, described next in Section 2.4.</p>
 
   <h3>2.2 Camera and Photo Library</h3>
   <p>With your permission, the App accesses:</p>
@@ -91,7 +92,18 @@
   </ul>
   <p>We never receive or see your payment card, bank, or Apple ID account details — those are handled entirely by Apple. See RevenueCat's privacy policy at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a> and Apple's privacy policy at <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</p>
 
-  <h3>2.4 Information we do not collect</h3>
+  <h3>2.4 AI Features (Chat with PDF, Summarize, Analyze, Extract, Rewrite, Translate)</h3>
+  <p>PDF Editor includes optional AI-powered tools — Chat with PDF, Summarize, Analyze, Extract, Rewrite, and Translate. These are the only features in the App where your content leaves your device. When you use one of them:</p>
+  <ul>
+    <li>The text of the document (or portion of it) you're working with, any photo you've attached, and the messages or instructions you type are sent to our AI provider, <strong>OpenAI</strong>, to generate a response.</li>
+    <li>This content is sent directly to OpenAI's API to produce your result and is not additionally stored on our own servers — we do not operate a backend that logs or retains your AI conversations.</li>
+    <li>Under OpenAI's API terms, data submitted through the API is not used to train their models and is retained only briefly for abuse and safety monitoring. See OpenAI's privacy policy at <a href="https://openai.com/privacy" target="_blank" rel="noopener">openai.com/privacy</a>.</li>
+    <li>The App uses a local "AI credits" allowance, tied to your subscription plan, to meter usage of these features. This balance is stored only on your device and is not shared with anyone.</li>
+    <li>The model configuration used to power these features is retrieved via <strong>Firebase Remote Config</strong> (Google), which may receive standard app/device metadata (such as app version and device type) needed to serve that configuration, but does not receive your document content.</li>
+  </ul>
+  <p>If you don't use these AI tools, no document content is ever sent off your device. You can always tell when a feature is AI-powered — it explicitly asks you to attach a document, type a message, or spends AI credits.</p>
+
+  <h3>2.5 Information we do not collect</h3>
   <ul>
     <li>We do not use third-party analytics or advertising SDKs.</li>
     <li>We do not require account creation, and we do not collect your name, email, or contact list.</li>
@@ -102,6 +114,7 @@
   <table>
     <tr><th>Data</th><th>Purpose</th></tr>
     <tr><td>PDF/document content, inserted images</td><td>Performed entirely on-device to provide the editing, conversion, and annotation features you use</td></tr>
+    <tr><td>Document text, attached photos, and chat messages (only when you use an AI feature)</td><td>Sent to OpenAI to generate the chat reply, summary, analysis, extraction, rewrite, or translation you requested</td></tr>
     <tr><td>Purchase / subscription status</td><td>To unlock the features included in your subscription and let you restore purchases across your devices</td></tr>
   </table>
 
@@ -113,12 +126,15 @@
   <ul>
     <li><strong>Apple</strong> — for App Store distribution, in-app purchases, and any iCloud sync you personally enable at the OS level.</li>
     <li><strong>RevenueCat</strong> — to manage and validate subscription entitlements, as described in Section 2.3.</li>
+    <li><strong>OpenAI</strong> — to generate a response, only when you actively use an AI feature (Chat with PDF, Summarize, Analyze, Extract, Rewrite, Translate), as described in Section 2.4.</li>
+    <li><strong>Firebase (Google)</strong> — to remotely configure which AI model the App uses, as described in Section 2.4.</li>
   </ul>
   <p>We may also disclose information if required by law, to protect our legal rights, or in connection with a merger, acquisition, or sale of assets, in which case this policy would continue to apply to your information.</p>
 
   <h2>6. Your Choices</h2>
   <ul>
     <li>You can grant or revoke Camera and Photo Library access at any time in <em>Settings → Privacy → Camera / Photos → PDF Editor</em>.</li>
+    <li>AI features are entirely optional — simply avoid Chat with PDF, Summarize, Analyze, Extract, Rewrite, and Translate if you don't want any document content sent to OpenAI. Every other editing, conversion, and annotation tool in the App stays fully on-device.</li>
     <li>You can delete documents at any time from within the App; deleting the App removes its local storage and App Group data from your device (subject to normal iOS behavior for backups you've made).</li>
     <li>You can manage or cancel your subscription any time via <em>Settings → [your name] → Subscriptions</em> on your device, per Apple's standard subscription management.</li>
   </ul>
@@ -127,10 +143,10 @@
   <p>PDF Editor is not directed to children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided us with personal information, contact us using the details below and we will address it.</p>
 
   <h2>8. Your Rights (GDPR / CCPA and similar laws)</h2>
-  <p>Depending on where you live, you may have rights to access, correct, delete, or restrict processing of personal data we hold about you. Because PDF Editor stores your document content only on your device and we hold minimal data about you (limited to what RevenueCat/Apple process for subscriptions, per Section 2.3), most such requests can be satisfied by managing the App and your subscription directly on your device. For anything else, contact us at the email below.</p>
+  <p>Depending on where you live, you may have rights to access, correct, delete, or restrict processing of personal data we hold about you. Because PDF Editor stores your document content only on your device and we hold minimal data about you (limited to what RevenueCat/Apple process for subscriptions, per Section 2.3, and what OpenAI/Firebase process only when you use an AI feature, per Section 2.4), most such requests can be satisfied by managing the App and your subscription directly on your device, or by simply not using the AI features. For anything else, contact us at the email below.</p>
 
   <h2>9. International Users</h2>
-  <p>If you use the App outside the country in which our subscription/service providers operate, be aware that limited data described in Section 2.3 (purchase/entitlement data) may be processed in other countries, including the United States, by Apple and RevenueCat.</p>
+  <p>If you use the App outside the country in which our service providers operate, be aware that limited data described in Section 2.3 (purchase/entitlement data) may be processed in other countries, including the United States, by Apple and RevenueCat. Likewise, if you use an AI feature, the content described in Section 2.4 is processed by OpenAI, including in the United States.</p>
 
   <h2>10. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time. Changes will be posted at this URL with a revised "Effective date." Continued use of the App after changes take effect constitutes acceptance of the updated policy.</p>
