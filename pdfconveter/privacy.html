@@ -64,7 +64,7 @@
   <ul>
     <li>Your PDF documents, edits, and images are processed and stored <strong>locally on your device</strong>. We do not operate a server that receives, stores, or views your files.</li>
     <li>The App requests Camera and Photo Library access only to let you add photos to a PDF — nothing is uploaded anywhere as a result.</li>
-    <li>If you use an <strong>AI feature</strong> (Chat with PDF, Summarize, Analyze, Extract, Rewrite, or Translate), the relevant document text and your messages are sent to our AI provider, OpenAI, solely to generate a response — see Section 2.4.</li>
+    <li>If you use an AI feature (Chat with PDF, Summarize, Analyze, Extract, Rewrite, or Translate), the relevant document text and your messages are sent to our AI provider, OpenAI, solely to generate a response — see Section 2.4.</li>
     <li>If you purchase a subscription, purchase and entitlement information is handled by Apple and our subscription platform, RevenueCat, as described below.</li>
     <li>We do not use advertising SDKs, and we do not sell your personal information.</li>
   </ul>
@@ -93,15 +93,17 @@
   <p>We never receive or see your payment card, bank, or Apple ID account details — those are handled entirely by Apple. See RevenueCat's privacy policy at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a> and Apple's privacy policy at <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</p>
 
   <h3>2.4 AI Features (Chat with PDF, Summarize, Analyze, Extract, Rewrite, Translate)</h3>
-  <p>PDF Editor includes optional AI-powered tools — Chat with PDF, Summarize, Analyze, Extract, Rewrite, and Translate. These are the only features in the App where your content leaves your device. When you use one of them:</p>
+  <p>PDF Editor includes optional AI-powered tools — Chat with PDF, Summarize, Analyze, Extract, Rewrite, and Translate. These are the only features in the App where your content leaves your device. Before you can use any of them for the first time, the App shows an in-app notice naming OpenAI and describing what is sent, and asks you to confirm before anything is transmitted.</p>
+  <div class="note">
+    <strong>What's sent, and to whom:</strong> when you use one of these tools, the text of the document (or portion of it) you're working with, any photo you've attached, and the messages or instructions you type are sent to our AI provider, <strong>OpenAI</strong>, to generate a response.
+  </div>
   <ul>
-    <li>The text of the document (or portion of it) you're working with, any photo you've attached, and the messages or instructions you type are sent to our AI provider, <strong>OpenAI</strong>, to generate a response.</li>
     <li>This content is sent directly to OpenAI's API to produce your result and is not additionally stored on our own servers — we do not operate a backend that logs or retains your AI conversations.</li>
     <li>Under OpenAI's API terms, data submitted through the API is not used to train their models and is retained only briefly for abuse and safety monitoring. See OpenAI's privacy policy at <a href="https://openai.com/privacy" target="_blank" rel="noopener">openai.com/privacy</a>.</li>
     <li>The App uses a local "AI credits" allowance, tied to your subscription plan, to meter usage of these features. This balance is stored only on your device and is not shared with anyone.</li>
-    <li>The model configuration used to power these features is retrieved via <strong>Firebase Remote Config</strong> (Google), which may receive standard app/device metadata (such as app version and device type) needed to serve that configuration, but does not receive your document content.</li>
+    <li>The model configuration used to power these features is retrieved via Firebase Remote Config (Google), which may receive standard app/device metadata (such as app version and device type) needed to serve that configuration, but does not receive your document content.</li>
   </ul>
-  <p>If you don't use these AI tools, no document content is ever sent off your device. You can always tell when a feature is AI-powered — it explicitly asks you to attach a document, type a message, or spends AI credits.</p>
+  <p>If you don't use these AI tools, no document content is ever sent off your device. You can always tell when a feature is AI-powered — it explicitly asks you to attach a document, type a message, or spends AI credits, and the first use of any AI tool always shows the in-app disclosure described above before anything is sent.</p>
 
   <h3>2.5 Information we do not collect</h3>
   <ul>
