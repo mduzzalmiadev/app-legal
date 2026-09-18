@@ -3,107 +3,156 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Resize Video</title>
+<title>Privacy Policy – Audio Recorder</title>
+<meta name="description" content="Privacy Policy for Audio Recorder, an independent, unofficial voice recording app.">
 <style>
   :root {
-    --bg: #ffffff;
-    --fg: #1d1d1f;
-    --muted: #6e6e73;
-    --accent: #0a84ff;
-    --border: #e5e5ea;
+    --bg: #ffffff; --text: #1c1c1e; --muted: #6b6b70; --card: #f5f5f7; --line: #e4e4e8;
+    --accent: #ff7a1a; --notice-bg: #fff4e8; --notice-line: #ffcf9f;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #000000;
-      --fg: #f5f5f7;
-      --muted: #98989d;
-      --accent: #0a84ff;
-      --border: #2c2c2e;
+      --bg: #0c0c0e; --text: #f2f2f4; --muted: #9a9aa2; --card: #1b1b1e; --line: #2a2a2e;
+      --accent: #ff9328; --notice-bg: #2a1d10; --notice-line: #5c3d1a;
     }
   }
   * { box-sizing: border-box; }
   body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    -webkit-text-size-adjust: 100%;
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
-  main {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 48px 24px 96px;
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header h1 { margin: 0 0 4px; font-size: 32px; line-height: 1.2; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 20px; }
+  .notice {
+    background: var(--notice-bg); border: 1px solid var(--notice-line);
+    border-radius: 14px; padding: 16px 18px; margin: 20px 0 28px;
   }
-  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; }
-  h2 { font-size: 21px; margin: 40px 0 12px; }
-  p, li { color: var(--fg); }
+  .notice strong { color: var(--accent); }
+  nav { margin: 0 0 8px; font-size: 14px; }
+  nav a { margin-right: 14px; }
+  h2 { font-size: 20px; margin: 34px 0 8px; }
+  p, li { margin: 8px 0; }
   ul { padding-left: 22px; }
-  li { margin: 6px 0; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .updated { color: var(--muted); font-size: 15px; margin-bottom: 32px; }
-  .note {
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px 18px;
-    margin: 24px 0;
-    color: var(--muted);
-    font-size: 15px;
-  }
-  footer {
-    margin-top: 56px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 14px;
-  }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { background: var(--card); }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 </style>
 </head>
 <body>
-<main>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Resize Video · Last updated 27 August 2026</p>
+<div class="wrap">
+  <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Audio Recorder &middot; Last updated: September 19, 2026</p>
+  </header>
 
-  <p>This Privacy Policy explains how <strong>Resize Video</strong> ("the App", "we", "us") handles information when you use the App. We built Resize Video to work almost entirely on your device, and we collect as little as possible.</p>
+  <div class="notice">
+    <strong>Independent &amp; unofficial app.</strong>
+    Audio Recorder is an independent app made by an individual developer. It is <strong>not affiliated with,
+    endorsed by, sponsored by, or connected to Audacity&reg;</strong>, the Audacity audio editor, the Audacity
+    project, or Muse Group. Audacity is a trademark of its respective owner and is mentioned only to make clear
+    that this app is a different, unrelated product.
+  </div>
 
-  <h2>Summary</h2>
+  <p>This Privacy Policy explains what information Audio Recorder (the &ldquo;App&rdquo;, &ldquo;we&rdquo;,
+  &ldquo;us&rdquo;) handles when you use it. In short: <strong>your recordings stay on your device</strong>, and we
+  do not run our own servers that store your audio or transcripts.</p>
+
+  <h2>1. Information the App handles</h2>
   <ul>
-    <li>We do <strong>not</strong> require an account and we do <strong>not</strong> collect your name, email, or contacts.</li>
-    <li>Your videos are processed <strong>on your device</strong>. They are never uploaded to us or to any server.</li>
-    <li>We do <strong>not</strong> use third-party analytics, advertising, or tracking SDKs.</li>
-    <li>We do <strong>not</strong> sell or share your personal data.</li>
+    <li><strong>Your recordings and transcripts.</strong> Audio you record, files you edit, merge or convert, and any
+      transcripts are stored locally in the App&rsquo;s storage on your device. We cannot access them, and they are not
+      uploaded to us. They may be included in your device backups (for example iCloud Backup) according to your device
+      settings.</li>
+    <li><strong>Microphone.</strong> The App uses the microphone only to record audio when you choose to record. It
+      does not record in the background on its own.</li>
+    <li><strong>Speech recognition (transcription).</strong> When you use Transcribe, your recording is converted to text
+      by Apple&rsquo;s Speech Recognition. This runs on your device when your language supports it. Otherwise the audio may
+      be sent to Apple to be processed, subject to
+      <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>. The App asks for your permission
+      before any transcription starts.</li>
+    <li><strong>AI tools.</strong> If you choose an AI tool (Summarize, Fix Grammar, Bullet Points or Action Items), the
+      <em>transcript text</em> (not the audio) is sent to OpenAI&rsquo;s GPT-5 model to generate the result, subject to
+      <a href="https://openai.com/policies/privacy-policy">OpenAI&rsquo;s Privacy Policy</a>. Nothing is sent to OpenAI unless
+      you choose one of these tools, and only after you have agreed in the App.</li>
+    <li><strong>Purchases and subscriptions.</strong> Payments are handled by Apple. We do not receive your payment card
+      details. We use RevenueCat to validate purchases and manage your Pro subscription status; this involves an
+      anonymous app user identifier and purchase receipt information.</li>
+    <li><strong>App configuration and analytics.</strong> We use Google Firebase (Remote Config and Analytics) to deliver
+      app settings and to understand, in aggregate, how the App is used and whether it works well. This can include
+      device and app information such as app version, device model, operating system and an app-instance identifier.
+      It does not include the content of your recordings or transcripts.</li>
+    <li><strong>Support messages.</strong> If you contact support, we receive your email address and the message you send.
+      The pre-filled email may include your app version, device model and iOS version to help us fix problems.</li>
   </ul>
 
-  <h2>Photos and Videos</h2>
-  <p>When you choose a video to resize, the App accesses only the item you select through the system photo picker. All resizing, reframing, background fill, and export happens locally on your device using Apple frameworks. Exported videos are saved back to your Photo Library only when you ask the App to save or share them. We have no access to your Photo Library and no copy of your media ever leaves your device through the App.</p>
+  <h2>2. How we use information</h2>
+  <ul>
+    <li>To provide the App&rsquo;s features: recording, editing, merging, converting and transcribing audio.</li>
+    <li>To process purchases and unlock Pro features.</li>
+    <li>To maintain, secure and improve the App, and to respond to support requests.</li>
+  </ul>
+  <p>We do not sell your personal information and we do not use your recordings or transcripts for advertising.</p>
 
-  <h2>Purchases and Subscriptions</h2>
-  <p>Resize Video offers an optional paid subscription ("Pro"). Payments are processed by Apple through your App Store account; we never see your card or billing details.</p>
-  <p>To manage entitlements, unlock Pro features, and support "Restore Purchases", we use <a href="https://www.revenuecat.com/" target="_blank" rel="noopener">RevenueCat</a> as our subscription infrastructure provider. RevenueCat receives a randomly generated app user identifier, your purchase and receipt information from Apple, and basic device and app information (such as device model, operating system version, and app version, and country). This data is used only to deliver and restore your subscription. See the <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a> for details.</p>
+  <h2>3. Third-party services</h2>
+  <table>
+    <tr><th>Service</th><th>Purpose</th><th>Data involved</th></tr>
+    <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Speech recognition; payments</td><td>Audio (only if not processed on-device); purchase data</td></tr>
+    <tr><td><a href="https://openai.com/policies/privacy-policy">OpenAI</a></td><td>AI tools (GPT-5)</td><td>Transcript text, only when you use an AI tool</td></tr>
+    <tr><td><a href="https://www.revenuecat.com/privacy">RevenueCat</a></td><td>Subscription management</td><td>Anonymous user ID, purchase receipts</td></tr>
+    <tr><td><a href="https://firebase.google.com/support/privacy">Google Firebase</a></td><td>Remote configuration, analytics</td><td>Device/app information, usage events</td></tr>
+  </table>
+  <p>These providers process data under their own terms and privacy policies. We share information with them only as
+  needed to provide the features described above, or when required by law.</p>
 
-  <h2>Information Apple May Provide</h2>
-  <p>If you have enabled sharing of diagnostics and usage data in your device settings, Apple may share aggregated, non-identifying App Store analytics with us (for example, download counts and crash statistics). This is controlled by your Apple settings, not by the App.</p>
+  <h2>4. Storage, retention and deletion</h2>
+  <p>Recordings and transcripts remain on your device until you delete them in the App or uninstall the App. Deleting a
+  recording removes its audio file from the App. Information held by the third-party services above is kept according to
+  their own retention policies.</p>
 
-  <h2>Data Retention</h2>
-  <p>Because the App does not collect personal information, there is nothing for us to retain. Subscription records held by RevenueCat and Apple are retained by those providers according to their own policies and for as long as needed to operate the subscription.</p>
+  <h2>5. Your choices</h2>
+  <ul>
+    <li><strong>Permissions.</strong> You can turn microphone and speech recognition access on or off at any time in
+      iOS Settings &gt; Privacy &amp; Security.</li>
+    <li><strong>Speech &amp; AI consent.</strong> You can withdraw your agreement to speech and AI processing in the App
+      under Settings &gt; Speech &amp; AI Processing.</li>
+    <li><strong>Subscriptions.</strong> You can manage or cancel a subscription in your Apple ID account settings.</li>
+    <li><strong>Analytics.</strong> To limit analytics, you can disable &ldquo;Allow Apps to Request to Track&rdquo; and
+      related privacy options in iOS Settings, or contact us.</li>
+  </ul>
 
-  <h2>Children</h2>
-  <p>Resize Video is not directed to children under 13, and we do not knowingly collect information from them.</p>
+  <h2>6. Children</h2>
+  <p>The App is not directed to children under 13 (or under 16 where local law requires), and we do not knowingly collect
+  personal information from them. If you believe a child has provided us information, contact us and we will help remove it.</p>
 
-  <h2>Your Rights</h2>
-  <p>Depending on where you live, you may have rights to access, correct, or delete personal data, or to object to its processing (for example under the GDPR or CCPA). Since we do not hold identifiable data about you, most requests relate to subscription records held by our providers. Contact us at the address below and we will help you exercise your rights or direct your request to the appropriate provider.</p>
+  <h2>7. Security</h2>
+  <p>Your recordings are stored in the App&rsquo;s protected storage on your device. Data sent to third-party services is
+  transmitted over encrypted connections. No method of storage or transmission is perfectly secure, so we cannot guarantee
+  absolute security.</p>
 
-  <h2>Changes to This Policy</h2>
-  <p>We may update this Policy from time to time. Material changes will be reflected by updating the "Last updated" date above and, where appropriate, through an in-App notice.</p>
+  <h2>8. International transfers</h2>
+  <p>Third-party providers may process information in countries other than your own. Where required, they apply
+  safeguards for such transfers under their own policies.</p>
 
-  <h2>Contact</h2>
-  <p>Questions about this Policy? Email <a href="mailto:mduzzalmia.dev@gmail.com">mduzzalmia.dev@gmail.com</a>.</p>
+  <h2>9. Your rights</h2>
+  <p>Depending on where you live (for example the EEA, UK or California), you may have rights to access, correct, delete or
+  restrict the use of your personal information, and to withdraw consent. Because your recordings are stored on your device,
+  you can exercise most of these directly in the App. For anything else, contact us at the address below.</p>
 
-  <div class="note">This document is provided for transparency and does not constitute legal advice.</div>
+  <h2>10. Changes to this policy</h2>
+  <p>We may update this policy from time to time. The &ldquo;Last updated&rdquo; date above shows the latest version.
+  Continued use of the App after a change means you accept the updated policy.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions or requests: <a href="mailto:mduzzalmia.dev@gmail.com">mduzzalmia.dev@gmail.com</a></p>
 
   <footer>
-    © 2026 Resize Video. All rights reserved. · <a href="terms.html">Terms of Use</a>
+    Audio Recorder is an independent, unofficial app and is not affiliated with Audacity&reg; or Muse Group.
+    All trademarks belong to their respective owners.
   </footer>
-</main>
+</div>
 </body>
 </html>
