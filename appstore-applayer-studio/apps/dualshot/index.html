@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DualShot: Dual Camera Recorder for iPhone | AppLayer Studio</title>
+    <meta
+      name="description"
+      content="Record with front and back iPhone cameras at once and get synced 9:16 and 16:9 videos from one take. FaceCam PiP and teleprompter built in."
+    />
+    <link rel="canonical" href="https://mduzzalmiadev.github.io/applayer-studio/apps/dualshot/" />
+
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../../favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <meta name="apple-itunes-app" content="app-id=6773714788" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="sitemap" href="../../sitemap.xml" />
+
+    <meta property="og:site_name" content="AppLayer Studio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DualShot: Dual Camera Recorder for iPhone" />
+    <meta
+      property="og:description"
+      content="Record with front and back iPhone cameras at once and get synced 9:16 and 16:9 videos from one take. FaceCam PiP and teleprompter built in."
+    />
+    <meta property="og:url" content="https://mduzzalmiadev.github.io/applayer-studio/apps/dualshot/" />
+    <meta
+      property="og:image"
+      content="https://mduzzalmiadev.github.io/applayer-studio/images/apps/dualshot/share.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="DualShot: Dual Camera Recorder on the App Store" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DualShot: Dual Camera Recorder for iPhone" />
+    <meta
+      name="twitter:description"
+      content="Record with front and back iPhone cameras at once and get synced 9:16 and 16:9 videos from one take. FaceCam PiP and teleprompter built in."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mduzzalmiadev.github.io/applayer-studio/images/apps/dualshot/share.jpg"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "DualShot: Dual Camera Recorder",
+        "description": "Record with the front and back cameras at once and save synchronized 9:16 and 16:9 videos from a single take, with FaceCam picture-in-picture and a teleprompter.",
+        "url": "https://mduzzalmiadev.github.io/applayer-studio/apps/dualshot/",
+        "image": "https://mduzzalmiadev.github.io/applayer-studio/images/apps/dualshot/icon-512.jpg",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "iOS 26.0+",
+        "installUrl": "https://apps.apple.com/app/id6773714788",
+        "sameAs": "https://apps.apple.com/app/id6773714788",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "AppLayer Studio",
+          "url": "https://mduzzalmiadev.github.io/applayer-studio/"
+        },
+        "softwareVersion": "1.6",
+        "screenshot": "https://mduzzalmiadev.github.io/applayer-studio/images/apps/dualshot/screenshot-1.webp",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body class="p-app">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a href="../../" class="brand" aria-label="AppLayer Studio home">
+          <span class="logo">
+            <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="logo-g-32" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#4338ca"></stop>
+                  <stop offset="0.55" stop-color="#7c3aed"></stop>
+                  <stop offset="1" stop-color="#0284c7"></stop>
+                </linearGradient>
+              </defs>
+              <rect width="40" height="40" rx="11" fill="url(#logo-g-32)"></rect>
+              <path d="M20 9.5 31 15l-11 5.5L9 15z" fill="#fff"></path>
+              <path d="m12.6 19.3-3.6 1.8 11 5.5 11-5.5-3.6-1.8-7.4 3.7z" fill="#fff" fill-opacity=".72"></path>
+              <path d="m12.6 25.3-3.6 1.8 11 5.5 11-5.5-3.6-1.8-7.4 3.7z" fill="#fff" fill-opacity=".45"></path>
+            </svg>
+            <span class="logo-name">AppLayer Studio</span>
+          </span>
+        </a>
+        <nav aria-label="Main">
+          <ul>
+            <li>
+              <a href="../../apps/" aria-current="page"> Apps </a>
+            </li>
+            <li>
+              <a href="../../categories/"> Categories </a>
+            </li>
+            <li>
+              <a href="../../guides/"> Guides </a>
+            </li>
+            <li>
+              <a href="../../about/"> About </a>
+            </li>
+            <li>
+              <a href="../../contact/"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <div class="wrap crumb-wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li>
+              <a href="../../">Home</a>
+            </li>
+            <li>
+              <a href="../../apps/">Apps</a>
+            </li>
+            <li aria-current="page">DualShot</li>
+          </ol>
+        </nav>
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mduzzalmiadev.github.io/applayer-studio/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Apps",
+                "item": "https://mduzzalmiadev.github.io/applayer-studio/apps/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "DualShot",
+                "item": "https://mduzzalmiadev.github.io/applayer-studio/apps/dualshot/"
+              }
+            ]
+          }
+        </script>
+      </div>
+
+      <section class="app-hero">
+        <div class="wrap hero-grid">
+          <img
+            class="app-icon"
+            src="../../images/apps/dualshot/icon.webp"
+            width="128"
+            height="128"
+            alt=""
+            loading="eager"
+            decoding="async"
+            style="--size: 128px"
+          />
+          <div>
+            <h1>DualShot: Dual Camera Recorder</h1>
+            <p class="lead">One take, two videos: vertical and horizontal.</p>
+            <p class="summary">
+              Record with the front and back cameras at once and save synchronized 9:16 and 16:9 videos from a single
+              take, with FaceCam picture-in-picture and a teleprompter.
+            </p>
+            <div class="chips">
+              <span class="chip">iPhone</span>
+              <a class="chip chip-link" href="../../categories/camera-video/"> Camera &amp; Video </a>
+            </div>
+            <div class="actions">
+              <a
+                class="btn btn-primary"
+                href="https://apps.apple.com/app/id6773714788"
+                rel="noopener"
+                data-appstore-link="dualshot"
+                aria-label="View on the App Store: DualShot: Dual Camera Recorder (opens apps.apple.com)"
+              >
+                <span>View on the App Store</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"
+                  ></path>
+                </svg>
+              </a>
+              <button
+                type="button"
+                class="btn btn-ghost share-btn"
+                data-share
+                data-share-title="DualShot: Dual Camera Recorder"
+                data-share-text="DualShot: Dual Camera Recorder – One take, two videos: vertical and horizontal."
+                hidden
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"></path>
+                </svg>
+                <span>Share</span>
+              </button>
+              <span class="share-status" role="status" aria-live="polite" data-share-status></span>
+              <span class="muted small">Free download. Offers in-app purchases.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shots-section" aria-labelledby="shots-h">
+        <div class="wrap">
+          <h2 id="shots-h" class="visually-hidden">Screenshots</h2>
+          <ul class="shots" tabindex="0" aria-label="DualShot iPhone screenshots (scrollable)">
+            <li>
+              <img
+                src="../../images/apps/dualshot/screenshot-1.webp"
+                width="460"
+                height="997"
+                alt="DualShot App Store screenshot 1 of 5"
+                loading="eager"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                src="../../images/apps/dualshot/screenshot-2.webp"
+                width="460"
+                height="997"
+                alt="DualShot App Store screenshot 2 of 5"
+                loading="eager"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                src="../../images/apps/dualshot/screenshot-3.webp"
+                width="460"
+                height="997"
+                alt="DualShot App Store screenshot 3 of 5"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                src="../../images/apps/dualshot/screenshot-4.webp"
+                width="460"
+                height="997"
+                alt="DualShot App Store screenshot 4 of 5"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                src="../../images/apps/dualshot/screenshot-5.webp"
+                width="460"
+                height="997"
+                alt="DualShot App Store screenshot 5 of 5"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+          </ul>
+          <p class="muted small shots-note">Screenshots from the official App Store listing.</p>
+        </div>
+      </section>
+      <div class="wrap body-grid">
+        <div class="main-col">
+          <section aria-labelledby="overview-h">
+            <h2 id="overview-h">Overview</h2>
+            <p>
+              DualShot records with your iPhone&#39;s front and back cameras simultaneously. From one recording it saves
+              a vertical 9:16 video for short-form platforms and a horizontal 16:9 video for YouTube or TV, synchronized
+              frame by frame.
+            </p>
+            <p>
+              FaceCam mode adds a movable selfie picture-in-picture for reactions, tutorials and reviews. A built-in
+              teleprompter auto-scrolls your script while you record.
+            </p>
+            <p>
+              The listing specifies up to 4K at 24/30/60 fps, HEVC compression and MOV or MP4 export. DualShot requires
+              iOS 26.0 or later.
+            </p>
+          </section>
+
+          <section aria-labelledby="features-h">
+            <h2 id="features-h">Key features</h2>
+            <ul class="features">
+              <li class="card">
+                <h3>Dual camera mode</h3>
+                <p>Front and back cameras at the same time, producing two synced videos from one take.</p>
+              </li>
+              <li class="card">
+                <h3>Dual output</h3>
+                <p>Saves portrait and landscape versions, as two videos and two photos.</p>
+              </li>
+              <li class="card">
+                <h3>FaceCam picture-in-picture</h3>
+                <p>A movable selfie overlay for reactions and tutorials.</p>
+              </li>
+              <li class="card">
+                <h3>Built-in teleprompter</h3>
+                <p>Auto-scrolling script with customizable settings.</p>
+              </li>
+              <li class="card">
+                <h3>11 cinematic filters</h3>
+                <p>Applied directly while recording.</p>
+              </li>
+              <li class="card">
+                <h3>Pro quality</h3>
+                <p>Up to 4K, 24/30/60 fps, HEVC, MOV or MP4 export.</p>
+              </li>
+              <li class="card">
+                <h3>Smart controls</h3>
+                <p>Zoom, focus, camera switching, audio mixing and background music.</p>
+              </li>
+            </ul>
+            <p class="muted small">Features as described on the App Store listing. Some require an in-app purchase.</p>
+          </section>
+
+          <section aria-labelledby="uses-h">
+            <h2 id="uses-h">Good for</h2>
+            <ul class="uses">
+              <li>Publishing to Reels, TikTok, Shorts and YouTube from one recording</li>
+              <li>Filming reactions and product reviews</li>
+              <li>Reading a script to camera with the teleprompter</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="faq-h">
+            <h2 id="faq-h">Questions</h2>
+            <div class="faqs">
+              <details>
+                <summary>Which iPhones can run DualShot?</summary>
+                <p>
+                  The App Store listing requires iOS 26.0 or later. Simultaneous front-and-back capture also depends on
+                  your iPhone&#39;s camera hardware, so check the listing&#39;s compatibility section for your device.
+                </p>
+              </details>
+            </div>
+          </section>
+
+          <section aria-labelledby="guides-h">
+            <h2 id="guides-h">Related guides</h2>
+            <div class="grid guide-grid">
+              <article class="guide-card card">
+                <p class="topic">Camera &amp; Video</p>
+                <h3 class="title">
+                  <a href="../../guides/how-to-record-a-reaction-video-on-iphone/"
+                    >How to Record a Reaction Video on iPhone</a
+                  >
+                </h3>
+                <p class="desc">
+                  Three ways to record reaction videos on iPhone, from built-in screen recording with your mic to
+                  face-cam overlays, plus audio and copyright tips.
+                </p>
+                <p class="date">Reviewed <time datetime="2026-10-24">October 24, 2026</time></p>
+              </article>
+              <article class="guide-card card">
+                <p class="topic">Camera &amp; Video</p>
+                <h3 class="title">
+                  <a href="../../guides/how-to-record-with-front-and-back-camera-on-iphone/"
+                    >How to Record with Front and Back Cameras at Once on iPhone</a
+                  >
+                </h3>
+                <p class="desc">
+                  Record with both iPhone cameras at once for reactions and vlogs, check which iPhones support it, and
+                  get vertical and horizontal versions from one take.
+                </p>
+                <p class="date">Reviewed <time datetime="2026-10-24">October 24, 2026</time></p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <aside class="side-col" aria-label="App details">
+          <div class="card details">
+            <h2>App details</h2>
+            <dl>
+              <dt>Price</dt>
+              <dd>Free download. Offers in-app purchases.</dd>
+
+              <dt>iPhone</dt>
+              <dd>Requires iOS 26.0 or later.</dd>
+
+              <dt>Mac</dt>
+              <dd>Requires macOS 26.0 or later and a Mac with Apple M1 chip or later.</dd>
+
+              <dt>Languages</dt>
+              <dd>English</dd>
+
+              <dt>Version</dt>
+              <dd>1.6</dd>
+
+              <dt>Seller</dt>
+              <dd>MD UZZAL MIA</dd>
+            </dl>
+            <a
+              class="btn btn-primary"
+              href="https://apps.apple.com/app/id6773714788"
+              rel="noopener"
+              data-appstore-link="dualshot"
+              aria-label="View on the App Store: DualShot: Dual Camera Recorder (opens apps.apple.com)"
+            >
+              <span>View on the App Store</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"
+                ></path>
+              </svg>
+            </a>
+            <ul class="links">
+              <li>
+                <a href="https://sites.google.com/view/uzzalmia-contacts/home" rel="noopener"> App support </a>
+              </li>
+              <li>
+                <a href="https://sites.google.com/view/duoshot-privacypolicy" rel="noopener"> Privacy policy </a>
+              </li>
+              <li>
+                <a href="https://sites.google.com/view/duoshot-terms" rel="noopener"> Terms of use </a>
+              </li>
+            </ul>
+            <p class="muted small fine">
+              Details from the App Store listing, last updated 2026-10-23. Check the listing for current pricing and
+              requirements in your region.
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <section class="section section-alt" aria-labelledby="related-h">
+        <div class="wrap">
+          <h2 id="related-h">Related apps</h2>
+          <div class="grid grid-apps">
+            <article
+              class="app-card card"
+              data-app-card
+              data-search="screen recorder: video edits screen recorder record your screen, then edit it in one app. screen recording in up to 4k at 60 fps with no watermark or time limit, plus a multi-track video editor and creator tools such as face-cam commentary. screen recording multi-track editor editing tools video commentary audio commentary dual camera slow motion"
+              data-categories="camera-video"
+              data-platforms="iPhone iPad"
+            >
+              <div class="top">
+                <img
+                  class="app-icon"
+                  src="../../images/apps/screen-recorder/icon.webp"
+                  width="60"
+                  height="60"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  style="--size: 60px"
+                />
+                <div>
+                  <h3 class="name"><a href="../../apps/screen-recorder/">Screen Recorder: Video Edits</a></h3>
+                  <p class="cat">Camera &amp; Video</p>
+                </div>
+              </div>
+              <p class="tagline">Record your screen, then edit it in one app.</p>
+              <div class="meta"><span class="chip">iPhone</span><span class="chip">iPad</span></div>
+            </article>
+            <article
+              class="app-card card"
+              data-app-card
+              data-search="ar drawing: draw on paper ar drawing trace any sketch onto real paper with your camera. project a sketch through your camera and trace it onto paper, use the screen as a light box, or paint digitally, with hundreds of templates and photo-to-sketch. camera mode screen mode painting mode drawing library ai image to sketch text styles record and share offline templates"
+              data-categories="photo-creative camera-video"
+              data-platforms="iPhone iPad"
+            >
+              <div class="top">
+                <img
+                  class="app-icon"
+                  src="../../images/apps/ar-drawing/icon.webp"
+                  width="60"
+                  height="60"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  style="--size: 60px"
+                />
+                <div>
+                  <h3 class="name"><a href="../../apps/ar-drawing/">AR Drawing: Draw on Paper</a></h3>
+                  <p class="cat">Photo, Art &amp; Design · Camera &amp; Video</p>
+                </div>
+              </div>
+              <p class="tagline">Trace any sketch onto real paper with your camera.</p>
+              <div class="meta"><span class="chip">iPhone</span><span class="chip">iPad</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section-tight end-cta">
+        <div class="wrap end-inner">
+          <img
+            class="app-icon"
+            src="../../images/apps/dualshot/icon.webp"
+            width="56"
+            height="56"
+            alt=""
+            loading="lazy"
+            decoding="async"
+            style="--size: 56px"
+          />
+          <p>
+            <strong>DualShot: Dual Camera Recorder</strong><br /><span class="muted small"
+              >Free download. Offers in-app purchases.</span
+            >
+          </p>
+          <a
+            class="btn btn-primary"
+            href="https://apps.apple.com/app/id6773714788"
+            rel="noopener"
+            data-appstore-link="dualshot"
+          >
+            View on the App Store
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap cols">
+        <div class="about">
+          <span class="logo">
+            <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="logo-g-32" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#4338ca"></stop>
+                  <stop offset="0.55" stop-color="#7c3aed"></stop>
+                  <stop offset="1" stop-color="#0284c7"></stop>
+                </linearGradient>
+              </defs>
+              <rect width="40" height="40" rx="11" fill="url(#logo-g-32)"></rect>
+              <path d="M20 9.5 31 15l-11 5.5L9 15z" fill="#fff"></path>
+              <path d="m12.6 19.3-3.6 1.8 11 5.5 11-5.5-3.6-1.8-7.4 3.7z" fill="#fff" fill-opacity=".72"></path>
+              <path d="m12.6 25.3-3.6 1.8 11 5.5 11-5.5-3.6-1.8-7.4 3.7z" fill="#fff" fill-opacity=".45"></path>
+            </svg>
+            <span class="logo-name">AppLayer Studio</span>
+          </span>
+          <p class="muted small">
+            AppLayer Studio is an independent Apple-platform developer making focused iPhone, iPad and Mac apps for
+            audio, PDFs, video, creativity and productivity.
+          </p>
+          <p class="small">
+            <a href="mailto:mduzzalmia.dev@gmail.com">mduzzalmia.dev@gmail.com</a>
+          </p>
+        </div>
+        <nav aria-label="Categories">
+          <h2>Categories</h2>
+          <ul>
+            <li>
+              <a href="../../categories/audio/">Audio &amp; Music</a>
+            </li>
+            <li>
+              <a href="../../categories/pdf-tools/">PDF &amp; Documents</a>
+            </li>
+            <li>
+              <a href="../../categories/camera-video/">Camera &amp; Video</a>
+            </li>
+            <li>
+              <a href="../../categories/photo-creative/">Photo, Art &amp; Design</a>
+            </li>
+            <li>
+              <a href="../../categories/productivity/">Productivity &amp; Business</a>
+            </li>
+            <li>
+              <a href="../../categories/writing-ai/">Writing &amp; AI</a>
+            </li>
+            <li>
+              <a href="../../categories/utilities/">Device Utilities</a>
+            </li>
+            <li>
+              <a href="../../categories/lifestyle/">Lifestyle &amp; Habits</a>
+            </li>
+          </ul>
+        </nav>
+        <nav aria-label="Studio">
+          <h2>Studio</h2>
+          <ul>
+            <li><a href="../../apps/">All apps</a></li>
+            <li><a href="../../guides/">Guides</a></li>
+            <li><a href="../../about/">About</a></li>
+            <li><a href="../../contact/">Contact &amp; support</a></li>
+            <li><a href="../../privacy/">Website privacy</a></li>
+            <li>
+              <a href="https://apps.apple.com/us/developer/md-uzzal-mia/id1873269826" rel="noopener"
+                >App Store developer page</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap legal small muted">
+        <p>© 2026 AppLayer Studio. Apps are published on the App Store by MD UZZAL MIA.</p>
+        <p>
+          Apple, the Apple logo, iPhone, iPad, Mac and App Store are trademarks of Apple Inc., registered in the U.S.
+          and other countries. AppLayer Studio is an independent developer and is not affiliated with or endorsed by
+          Apple Inc. Other product names mentioned on this site belong to their respective owners and do not imply
+          endorsement.
+        </p>
+      </div>
+    </footer>
+    <script src="../../assets/js/share.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClipTone: Ringtone Maker for iPhone | AppLayer Studio</title>
+    <meta
+      name="description"
+      content="Turn any video or audio clip into a custom iPhone ringtone, alarm, text tone or charging sound. Trim on a waveform and preview before saving."
+    />
+    <link rel="canonical" href="https://mduzzalmiadev.github.io/applayer-studio/apps/cliptone/" />
+
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../../favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <meta name="apple-itunes-app" content="app-id=6761435037" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="sitemap" href="../../sitemap.xml" />
+
+    <meta property="og:site_name" content="AppLayer Studio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ClipTone: Ringtone Maker for iPhone" />
+    <meta
+      property="og:description"
+      content="Turn any video or audio clip into a custom iPhone ringtone, alarm, text tone or charging sound. Trim on a waveform and preview before saving."
+    />
+    <meta property="og:url" content="https://mduzzalmiadev.github.io/applayer-studio/apps/cliptone/" />
+    <meta
+      property="og:image"
+      content="https://mduzzalmiadev.github.io/applayer-studio/images/apps/cliptone/share.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ClipTone: Ringtone Maker on the App Store" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ClipTone: Ringtone Maker for iPhone" />
+    <meta
+      name="twitter:description"
+      content="Turn any video or audio clip into a custom iPhone ringtone, alarm, text tone or charging sound. Trim on a waveform and preview before saving."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mduzzalmiadev.github.io/applayer-studio/images/apps/cliptone/share.jpg"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ClipTone: Ringtone Maker",
+        "description": "Trim a favorite moment from a video or audio file and save it as a ringtone, alarm sound, text tone or charging sound.",
+        "url": "https://mduzzalmiadev.github.io/applayer-studio/apps/cliptone/",
+        "image": "https://mduzzalmiadev.github.io/applayer-studio/images/apps/cliptone/icon-512.jpg",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "iOS 16.6+, iPadOS 16.6+",
+        "installUrl": "https://apps.apple.com/app/id6761435037",
+        "sameAs": "https://apps.apple.com/app/id6761435037",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "AppLayer Studio",
+          "url": "https://mduzzalmiadev.github.io/applayer-studio/"
+        },
+        "softwareVersion": "1.5",
+        "screenshot": "https://mduzzalmiadev.github.io/applayer-studio/images/apps/cliptone/screenshot-1.webp",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body class="p-app">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a href="../../" class="brand" aria-label="AppLayer Studio home">
+          <span class="logo">
+            <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="logo-g-32" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#4338ca"></stop>
+                  <stop offset="0.55" stop-color="#7c3aed"></stop>
+                  <stop offset="1" stop-color="#0284c7"></stop>
+                </linearGradient>
+              </defs>
+              <rect width="40" height="40" rx="11" fill="url(#logo-g-32)"></rect>
+              <path d="M20 9.5 31 15l-11 5.5L9 15z" fill="#fff"></path>
+              <path d="m12.6 19.3-3.6 1.8 11 5.5 11-5.5-3.6-1.8-7.4 3.7z" fill="#fff" fill-opacity=".72"></path>
+              <path d="m12.6 25.3-3.6 1.8 11 5.5 11-5.5-3.6-1.8-7.4 3.7z" fill="#fff" fill-opacity=".45"></path>
+            </svg>
+            <span class="logo-name">AppLayer Studio</span>
+          </span>
+        </a>
+        <nav aria-label="Main">
+          <ul>
+            <li>
+              <a href="../../apps/" aria-current="page"> Apps </a>
+            </li>
+            <li>
+              <a href="../../categories/"> Categories </a>
+            </li>
+            <li>
+              <a href="../../guides/"> Guides </a>
+            </li>
+            <li>
+              <a href="../../about/"> About </a>
+            </li>
+            <li>
+              <a href="../../contact/"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <div class="wrap crumb-wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li>
+              <a href="../../">Home</a>
+            </li>
+            <li>
+              <a href="../../apps/">Apps</a>
+            </li>
+            <li aria-current="page">ClipTone</li>
+          </ol>
+        </nav>
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mduzzalmiadev.github.io/applayer-studio/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Apps",
+                "item": "https://mduzzalmiadev.github.io/applayer-studio/apps/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ClipTone",
+                "item": "https://mduzzalmiadev.github.io/applayer-studio/apps/cliptone/"
+              }
+            ]
+          }
+        </script>
+      </div>
+
+      <section class="app-hero">
+        <div class="wrap hero-grid">
+          <img
+            class="app-icon"
+            src="../../images/apps/cliptone/icon.webp"
+            width="128"
+            height="128"
+            alt=""
+            loading="eager"
+            decoding="async"
+            style="--size: 128px"
+          />
+          <div>
+            <h1>ClipTone: Ringtone Maker</h1>
+            <p class="lead">Turn any video or audio clip into a custom tone.</p>
+            <p class="summary">
+              Trim a favorite moment from a video or audio file and save it as a ringtone, alarm sound, text tone or
+              charging sound.
+            </p>
+            <div class="chips">
+              <span class="chip">iPhone</span><span class="chip">iPad</span>
+              <a class="chip chip-link" href="../../categories/audio/"> Audio &amp; Music </a>
+            </div>
+            <div class="actions">
+              <a
+                class="btn btn-primary"
+                href="https://apps.apple.com/app/id6761435037"
+                rel="noopener"
+                data-appstore-link="cliptone"
+                aria-label="View on the App Store: ClipTone: Ringtone Maker (opens apps.apple.com)"
+              >
+                <span>View on the App Store</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"
+                  ></path>
+                </svg>
+              </a>
+              <button
+                type="button"
+                class="btn btn-ghost share-btn"
+                data-share
+                data-share-title="ClipTone: Ringtone Maker"
+                data-share-text="ClipTone: Ringtone Maker – Turn any video or audio clip into a custom tone."
+                hidden
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"></path>
+                </svg>
+                <span>Share</span>
+              </button>
+              <span class="share-status" role="status" aria-live="polite" data-share-status></span>
+              <span class="muted small">Free download. Offers in-app purchases.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shots-section" aria-labelledby="shots-h">
+        <div class="wrap">
+          <h2 id="shots-h" class="visually-hidden">Screenshots</h2>
+          <ul class="shots" tabindex="0" aria-label="ClipTone iPhone screenshots (scrollable)">
+            <li>
+              <img
+                src="../../images/apps/cliptone/screenshot-1.webp"
+                width="460"
+                height="997"
+                alt="ClipTone App Store screenshot 1 of 5"
+                loading="eager"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                src="../../images/apps/cliptone/screenshot-2.webp"
+                width="460"
+                height="997"
+                alt="ClipTone App Store screenshot 2 of 5"
+                loading="eager"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                src="../../images/apps/cliptone/screenshot-3.webp"
+                width="460"
+                height="997"
+                alt="ClipTone App Store screenshot 3 of 5"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                src="../../images/apps/cliptone/screenshot-4.webp"
+                width="460"
+                height="997"
+                alt="ClipTone App Store screenshot 4 of 5"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                src="../../images/apps/cliptone/screenshot-5.webp"
+                width="460"
+                height="997"
+                alt="ClipTone App Store screenshot 5 of 5"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+          </ul>
+          <p class="muted small shots-note">Screenshots from the official App Store listing.</p>
+        </div>
+      </section>
+      <div class="wrap body-grid">
+        <div class="main-col">
+          <section aria-labelledby="overview-h">
+            <h2 id="overview-h">Overview</h2>
+            <p>
+              ClipTone is a ringtone maker for iPhone. Pick a video or an audio file, trim the part you want with a
+              waveform editor, preview it, and save it as a tone.
+            </p>
+            <p>
+              Because iOS does not let third-party apps change your ringtone directly, ClipTone sets ringtones and alert
+              tones through Apple&#39;s free GarageBand app, as stated on the App Store listing.
+            </p>
+            <p>
+              It also keeps a collection of everything you create (ringtones, alarms, text tones and charging sounds),
+              organized by category, with favorites.
+            </p>
+          </section>
+
+          <section aria-labelledby="features-h">
+            <h2 id="features-h">Key features</h2>
+            <ul class="features">
+              <li class="card">
+                <h3>Extract audio from video</h3>
+                <p>Use the sound from any video in your library, or import audio files directly.</p>
+              </li>
+              <li class="card">
+                <h3>Waveform trimming</h3>
+                <p>Select precise start and end points on a visual waveform and preview before saving.</p>
+              </li>
+              <li class="card">
+                <h3>Ringtones and alert tones</h3>
+                <p>Set as a ringtone or alert tone via GarageBand.</p>
+              </li>
+              <li class="card">
+                <h3>Alarm sounds</h3>
+                <p>Create custom alarm sounds from any audio.</p>
+              </li>
+              <li class="card">
+                <h3>Text tones</h3>
+                <p>Make unique notification sounds for messages.</p>
+              </li>
+              <li class="card">
+                <h3>Charging sounds</h3>
+                <p>Set custom sounds for charge start, charge end, full charge and low battery.</p>
+              </li>
+              <li class="card">
+                <h3>My Collection</h3>
+                <p>Rename, organize and favorite your tones by category.</p>
+              </li>
+            </ul>
+            <p class="muted small">Features as described on the App Store listing. Some require an in-app purchase.</p>
+          </section>
+
+          <section aria-labelledby="uses-h">
+            <h2 id="uses-h">Good for</h2>
+            <ul class="uses">
+              <li>Making a ringtone from a song clip or a video you recorded</li>
+              <li>Giving a contact or messages a distinctive tone</li>
+              <li>Waking up to a favorite sound</li>
+              <li>Personalizing iPhone charging sounds</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="faq-h">
+            <h2 id="faq-h">Questions</h2>
+            <div class="faqs">
+              <details>
+                <summary>Why does ClipTone use GarageBand?</summary>
+                <p>
+                  iOS only lets apps add ringtones through Apple&#39;s own channels. ClipTone&#39;s listing states that
+                  ringtones and alert tones are set via GarageBand, Apple&#39;s free music app. Our ringtone guide walks
+                  through the full process.
+                </p>
+              </details>
+              <details>
+                <summary>Is ClipTone free?</summary>
+                <p>
+                  ClipTone is free to download. Its listing says all features are unlocked with an auto-renewing
+                  subscription that includes a 3-day free trial. Prices vary by location and are shown in the app.
+                </p>
+              </details>
+            </div>
+          </section>
+
+          <section aria-labelledby="guides-h">
+            <h2 id="guides-h">Related guides</h2>
+            <div class="grid guide-grid">
+              <article class="guide-card card">
+                <p class="topic">Audio &amp; Music</p>
+                <h3 class="title">
+                  <a href="../../guides/how-to-extract-audio-from-video-on-iphone/"
+                    >How to Extract Audio from a Video on iPhone</a
+                  >
+                </h3>
+                <p class="desc">
+                  Save just the sound from a video on your iPhone as an audio file, using a free Shortcut, an offline
+                  converter app, or an audio editor.
+                </p>
+                <p class="date">Reviewed <time datetime="2026-10-24">October 24, 2026</time></p>
+              </article>
+              <article class="guide-card card">
+                <p class="topic">Audio &amp; Music</p>
+                <h3 class="title">
+                  <a href="../../guides/how-to-make-a-ringtone-on-iphone/">How to Make a Custom Ringtone on iPhone</a>
+                </h3>
+                <p class="desc">
+                  Turn any song clip, voice memo or video sound into an iPhone ringtone or text tone using GarageBand, a
+                  Mac, or a ringtone maker app.
+                </p>
+                <p class="date">Reviewed <time datetime="2026-10-24">October 24, 2026</time></p>
+              </article>
+              <article class="guide-card card">
+                <p class="topic">Audio &amp; Music</p>
+                <h3 class="title">
+                  <a href="../../guides/how-to-trim-audio-on-iphone/">How to Trim Audio on iPhone</a>
+                </h3>
+                <p class="desc">
+                  Cut the start or end off a recording or audio file on iPhone with Voice Memos, or make precise cuts in
+                  the middle with an audio editor.
+                </p>
+                <p class="date">Reviewed <time datetime="2026-10-24">October 24, 2026</time></p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <aside class="side-col" aria-label="App details">
+          <div class="card details">
+            <h2>App details</h2>
+            <dl>
+              <dt>Price</dt>
+              <dd>Free download. Offers in-app purchases.</dd>
+
+              <dt>iPhone</dt>
+              <dd>Requires iOS 16.6 or later.</dd>
+
+              <dt>iPad</dt>
+              <dd>Requires iPadOS 16.6 or later.</dd>
+
+              <dt>Mac</dt>
+              <dd>Requires macOS 13.5 or later and a Mac with Apple M1 chip or later.</dd>
+
+              <dt>Languages</dt>
+              <dd>
+                <details class="langs">
+                  <summary>22 languages</summary>
+                  English, Arabic, Dutch, French, German, Greek, Hindi, Indonesian, Italian, Japanese, Korean, Malay,
+                  Polish, Portuguese, Romanian, Russian, Simplified Chinese, Spanish, Thai, Traditional Chinese,
+                  Turkish, Ukrainian
+                </details>
+              </dd>
+
+              <dt>Version</dt>
+              <dd>1.5</dd>
+
+              <dt>Seller</dt>
+              <dd>MD UZZAL MIA</dd>
+            </dl>
+            <a
+              class="btn btn-primary"
+              href="https://apps.apple.com/app/id6761435037"
+              rel="noopener"
+              data-appstore-link="cliptone"
+              aria-label="View on the App Store: ClipTone: Ringtone Maker (opens apps.apple.com)"
+            >
+              <span>View on the App Store</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"
+                ></path>
+              </svg>
+            </a>
+            <ul class="links">
+              <li>
+                <a href="https://sites.google.com/view/uzzalmia-contacts/home" rel="noopener"> App support </a>
+              </li>
+              <li>
+                <a href="https://sites.google.com/view/audio-cliptone-privacy/home" rel="noopener"> Privacy policy </a>
+              </li>
+              <li>
+                <a href="https://sites.google.com/view/audio-cliptone-terms/home" rel="noopener"> Terms of use </a>
+              </li>
+            </ul>
+            <p class="muted small fine">
+              Details from the App Store listing, last updated 2026-07-15. Check the listing for current pricing and
+              requirements in your region.
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <section class="section section-alt" aria-labelledby="related-h">
+        <div class="wrap">
+          <h2 id="related-h">Related apps</h2>
+          <div class="grid grid-apps">
+            <article
+              class="app-card card"
+              data-app-card
+              data-search="audio edit: audio editor pro audio edit a full audio studio for iphone, ipad and mac. record, trim, clean up and transform audio files with multi-track editing, 60 studio effects and tools, noise reduction, and export to 28 formats. record, import and extract precise editing multi-track mixing studio effects clean up and repair vocal tools export to 28 formats live preview"
+              data-categories="audio"
+              data-platforms="iPhone iPad Mac"
+            >
+              <div class="top">
+                <img
+                  class="app-icon"
+                  src="../../images/apps/audio-editor-pro/icon.webp"
+                  width="60"
+                  height="60"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  style="--size: 60px"
+                />
+                <div>
+                  <h3 class="name"><a href="../../apps/audio-editor-pro/">Audio Edit: Audio Editor Pro</a></h3>
+                  <p class="cat">Audio &amp; Music</p>
+                </div>
+              </div>
+              <p class="tagline">A full audio studio for iPhone, iPad and Mac.</p>
+              <div class="meta">
+                <span class="chip">iPhone</span><span class="chip">iPad</span><span class="chip">Mac</span>
+              </div>
+            </article>
+            <article
+              class="app-card card"
+              data-app-card
+              data-search="ytmp3: mp3 audio converter mp3 audio converter mp3 converter convert videos on your device to mp3, offline. extract the audio from videos in your photos library and save it as mp3, entirely on your device, with no upload and no internet connection required. offline conversion on-device processing import from photos built-in player conversion history conversion settings"
+              data-categories="audio"
+              data-platforms="iPhone Mac"
+            >
+              <div class="top">
+                <img
+                  class="app-icon"
+                  src="../../images/apps/mp3-audio-converter/icon.webp"
+                  width="60"
+                  height="60"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  style="--size: 60px"
+                />
+                <div>
+                  <h3 class="name"><a href="../../apps/mp3-audio-converter/">YTMP3: MP3 Audio Converter</a></h3>
+                  <p class="cat">Audio &amp; Music</p>
+                </div>
+              </div>
+              <p class="tagline">Convert videos on your device to MP3, offline.</p>
+              <div class="meta"><span class="chip">iPhone</span><span class="chip">Mac</span></div>
+            </article>
+            <article
+              class="app-card card"
+              data-app-card
+              data-search="fxsound - volume boost &amp; eq fxsound bass booster louder volume, deeper bass and a 5-band eq. an offline music player with a volume booster, bass booster, 5-band equalizer with presets, and an a/b comparison against the original sound. volume booster bass booster 5-band equalizer boosted vs original offline player"
+              data-categories="audio"
+              data-platforms="iPhone"
+            >
+              <div class="top">
+                <img
+                  class="app-icon"
+                  src="../../images/apps/fxsound/icon.webp"
+                  width="60"
+                  height="60"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  style="--size: 60px"
+                />
+                <div>
+                  <h3 class="name"><a href="../../apps/fxsound/">FxSound - Volume Boost &amp; EQ</a></h3>
+                  <p class="cat">Audio &amp; Music</p>
+                </div>
+              </div>
+              <p class="tagline">Louder volume, deeper bass and a 5-band EQ.</p>
+              <div class="meta">
+                <span class="chip">iPhone</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section-tight end-cta">
+        <div class="wrap end-inner">
+          <img
+            class="app-icon"
+            src="../../images/apps/cliptone/icon.webp"
+            width="56"
+            height="56"
+            alt=""
+            loading="lazy"
+            decoding="async"
+            style="--size: 56px"
+          />
+          <p>
+            <strong>ClipTone: Ringtone Maker</strong><br /><span class="muted small"
+              >Free download. Offers in-app purchases.</span
+            >
+          </p>
+          <a
+            class="btn btn-primary"
+            href="https://apps.apple.com/app/id6761435037"
+            rel="noopener"
+            data-appstore-link="cliptone"
+          >
+            View on the App Store
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap cols">
+        <div class="about">
+          <span class="logo">
+            <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="logo-g-32" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#4338ca"></stop>
+                  <stop offset="0.55" stop-color="#7c3aed"></stop>
+                  <stop offset="1" stop-color="#0284c7"></stop>
+                </linearGradient>
+              </defs>
+              <rect width="40" height="40" rx="11" fill="url(#logo-g-32)"></rect>
+              <path d="M20 9.5 31 15l-11 5.5L9 15z" fill="#fff"></path>
+              <path d="m12.6 19.3-3.6 1.8 11 5.5 11-5.5-3.6-1.8-7.4 3.7z" fill="#fff" fill-opacity=".72"></path>
+              <path d="m12.6 25.3-3.6 1.8 11 5.5 11-5.5-3.6-1.8-7.4 3.7z" fill="#fff" fill-opacity=".45"></path>
+            </svg>
+            <span class="logo-name">AppLayer Studio</span>
+          </span>
+          <p class="muted small">
+            AppLayer Studio is an independent Apple-platform developer making focused iPhone, iPad and Mac apps for
+            audio, PDFs, video, creativity and productivity.
+          </p>
+          <p class="small">
+            <a href="mailto:mduzzalmia.dev@gmail.com">mduzzalmia.dev@gmail.com</a>
+          </p>
+        </div>
+        <nav aria-label="Categories">
+          <h2>Categories</h2>
+          <ul>
+            <li>
+              <a href="../../categories/audio/">Audio &amp; Music</a>
+            </li>
+            <li>
+              <a href="../../categories/pdf-tools/">PDF &amp; Documents</a>
+            </li>
+            <li>
+              <a href="../../categories/camera-video/">Camera &amp; Video</a>
+            </li>
+            <li>
+              <a href="../../categories/photo-creative/">Photo, Art &amp; Design</a>
+            </li>
+            <li>
+              <a href="../../categories/productivity/">Productivity &amp; Business</a>
+            </li>
+            <li>
+              <a href="../../categories/writing-ai/">Writing &amp; AI</a>
+            </li>
+            <li>
+              <a href="../../categories/utilities/">Device Utilities</a>
+            </li>
+            <li>
+              <a href="../../categories/lifestyle/">Lifestyle &amp; Habits</a>
+            </li>
+          </ul>
+        </nav>
+        <nav aria-label="Studio">
+          <h2>Studio</h2>
+          <ul>
+            <li><a href="../../apps/">All apps</a></li>
+            <li><a href="../../guides/">Guides</a></li>
+            <li><a href="../../about/">About</a></li>
+            <li><a href="../../contact/">Contact &amp; support</a></li>
+            <li><a href="../../privacy/">Website privacy</a></li>
+            <li>
+              <a href="https://apps.apple.com/us/developer/md-uzzal-mia/id1873269826" rel="noopener"
+                >App Store developer page</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap legal small muted">
+        <p>© 2026 AppLayer Studio. Apps are published on the App Store by MD UZZAL MIA.</p>
+        <p>
+          Apple, the Apple logo, iPhone, iPad, Mac and App Store are trademarks of Apple Inc., registered in the U.S.
+          and other countries. AppLayer Studio is an independent developer and is not affiliated with or endorsed by
+          Apple Inc. Other product names mentioned on this site belong to their respective owners and do not imply
+          endorsement.
+        </p>
+      </div>
+    </footer>
+    <script src="../../assets/js/share.js" defer></script>
+  </body>
+</html>
